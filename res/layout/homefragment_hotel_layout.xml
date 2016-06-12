@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+        android:background="@color/citylist_divider"
+    
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#484E61" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酒店预订"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+        
+       </RelativeLayout>
+
+    <ImageView 
+        
+	     android:layout_width="match_parent"
+	     android:layout_height="0.5dp"
+	     android:background="@color/gray"
+		
+	     />
+    
+    <TableLayout 
+        android:id="@+id/hotelInfo_tablelayout"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="1"
+	       android:layout_margin="15dip"
+                android:background="@color/white"
+        
+        >
+        
+        <TableRow >
+            <TextView 
+                android:id="@+id/getCar_city"
+                android:layout_height="wrap_content"
+                android:text="目的城市"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                />
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                 android:layout_margin="10dp" 
+                >
+             <ImageView 
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@color/gray"
+	            />
+            <TextView 
+                android:id="@+id/checkIn_city_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="选择入住城市"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                />
+            <ImageButton 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/next_more"  
+               android:layout_gravity="center_vertical"        
+               />
+            </LinearLayout>
+            
+        </TableRow>
+        <TableRow >
+            <TextView 
+                
+                android:layout_height="wrap_content"
+                android:text="入住时间"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                
+                />
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp" 
+                
+                >
+                <ImageView 
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@color/gray"
+	            />
+            <TextView 
+                android:id="@+id/checkIn_time_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="选择入住日期"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                />
+            <ImageButton 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/next_more"  
+               android:layout_gravity="center_vertical"        
+               />
+            </LinearLayout>
+            
+        </TableRow>
+        <TableRow >
+            <TextView 
+               
+                android:layout_height="wrap_content"
+                android:text="离开时间"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                
+                />
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp" 
+                
+                >
+                <ImageView 
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@color/gray"
+
+	            />
+            <TextView 
+                android:id="@+id/checkOut_time_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="选择离开日期"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                />
+            <ImageButton 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/next_more"
+               android:layout_gravity="center_vertical"           
+               />
+            </LinearLayout>
+            
+        </TableRow>
+        <TableRow 
+            android:visibility="gone"
+            >
+            <TextView 
+               
+                android:layout_height="wrap_content"
+                android:text="关键字"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                
+                />
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp" 
+                
+                >
+                <ImageView 
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@color/gray"
+
+	            />
+            <TextView 
+                android:id="@+id/keyword_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:hint="输入酒店名、地名"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                />
+            <ImageButton 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/next_more"    
+               android:layout_gravity="center_vertical"       
+               />
+            </LinearLayout>
+            
+        </TableRow
+            
+            >
+                <TableRow 
+                    android:visibility="gone"
+                    >
+            <TextView 
+               
+                android:layout_height="wrap_content"
+                android:text="星级价格"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                
+                />
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp" 
+                >
+            <ImageView 
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@color/gray"
+	            />
+            <TextView 
+                android:id="@+id/star_price_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:hint="不限星级价格"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                />
+            <ImageButton 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/next_more"  
+               android:layout_gravity="center_vertical"         
+               />
+            </LinearLayout>
+            
+        </TableRow>
+    </TableLayout>
+    
+    <ImageView 
+         android:id="@+id/line_bolow_tablelayout"
+	     android:layout_width="match_parent"
+	     android:layout_height="0.5dp"
+	     android:background="@color/gray"
+
+	     />
+    
+	 <RelativeLayout 
+	     android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+        
+        <Button 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:text="开始搜索"
+            />
+        
+    </RelativeLayout>
+   <LinearLayout android:layout_width="fill_parent"
+	            android:layout_height="40dip"
+	            android:layout_marginTop="10dip"
+	            android:gravity="center">
+	        <Button 
+            android:id="@+id/commit_button_to_hotellist"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dip"	           
+	            android:layout_marginLeft="15dip"
+	            android:layout_marginRight="15dip"	            
+	            android:background="#484E61"
+	            android:text="搜索"
+	            android:textColor="@color/white"
+	            android:onClick="onLogin"
+	            android:clickable="true"
+	           />
+	         </LinearLayout>
+
+</LinearLayout>

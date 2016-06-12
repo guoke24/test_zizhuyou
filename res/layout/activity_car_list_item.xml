@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:id="@+id/car_item_imageView"
+            android:layout_width="128dp"
+            android:layout_height="96dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/car_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/car_item_imageView"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/car_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="雪佛兰科鲁兹"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/car_item_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="三厢丨1.6L自动丨乘坐5人"
+                android:textColor="#898989"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/car_item_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="￥120/天"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+
+        android:background="@color/light_gray2" />
+
+</LinearLayout>

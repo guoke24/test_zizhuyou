@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_content"
+        android:layout_marginBottom="40dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="快速登陆"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/login_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="账号："
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/fastlogin_account"
+                android:layout_height="wrap_content"
+                android:hint="输入手机号" >
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="验证码："
+                android:textSize="20sp" />
+
+            <RelativeLayout android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/fastlogin_validateCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/fastlogin_code_button"
+                    android:layout_centerVertical="true"
+                     />
+
+                <guoke.custom.timebutton.TimeButton
+                    android:id="@+id/fastlogin_code_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/fastlogin_login"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="登陆" />
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:id="@+id/fastlogin_paw_login"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="去使用密码登陆"
+                android:background="@color/white" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

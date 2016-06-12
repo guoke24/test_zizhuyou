@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.demo_zizhuyou"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <!-- GPS定位权限 -->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="guoke.imageloader.UILApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="57c3a884ac2f6e20c9a9f076d535e186" >
+        </meta-data>
+
+        <activity
+            android:name="guoke.activity.HotelListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="guoke.activity.HotelDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AddrAndDateActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AddressSelectActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".CalendarActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="guoke.activity.HotelRoomReserveActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="guoke.home.HomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="guoke.activity.CarListActivity"
+            android:label="@string/title_activity_car_list" >
+        </activity>
+        <activity
+            android:name="guoke.activity.CarCommitOrderActivity"
+            android:label="@string/title_activity_car_reserve"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="guoke.activity.CarReserveActivity"
+            android:label="@string/title_activity_car_order_commit" >
+        </activity>
+        <activity
+            android:name=".BaseListActivity"
+            android:label="@string/title_activity_base" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".FastLoginActivity"
+            android:label="@string/title_activity_fast_login" >
+        </activity>
+        <activity
+            android:name="guoke.orderlist.RoomOrderListActivity"
+            android:label="@string/title_activity_room_order_list" >
+        </activity>
+        <activity
+            android:name="guoke.activity.AttractionsListActivity"
+            android:label="@string/title_activity_attractions" >
+        </activity>
+        <activity
+            android:name="guoke.activity.AttracTicketActivity"
+            android:label="@string/title_activity_attrac_ticket" >
+        </activity>
+        <activity
+            android:name="guoke.activity.AttracTicketReserveActivity"
+            android:label="@string/title_activity_attrac_ticket_reserve" >
+        </activity>
+        <activity
+            android:name="guoke.activity.CateReserveActivity"
+            android:label="@string/title_activity_cate_reserve" >
+        </activity>
+        <activity
+            android:name="guoke.activity.RoomOrderDetailActivity"
+            android:label="@string/title_activity_room_order_detail" >
+        </activity>
+        <activity
+            android:name=".MapFunActivity"
+            android:label="@string/title_activity_map_fun" >
+        </activity>
+        <activity
+            android:name=".AlterPawActivity"
+            android:label="@string/title_activity_alter_paw" >
+        </activity>
+        <activity
+            android:name="guoke.activity.OrderCateListActivity"
+            android:label="@string/title_activity_cate_order_list" >
+        </activity>
+        <activity
+            android:name="guoke.activity.OrderCarListActivity"
+            android:label="@string/title_activity_order_car_list" >
+        </activity>
+        <activity
+            android:name="guoke.activity.OrderTicketListActivity"
+            android:label="@string/title_activity_order_ticket_list" >
+        </activity>
+        <activity
+            android:name="guoke.activity.CateOrderDetailActivity"
+            android:label="@string/title_activity_cate_order_detail" >
+        </activity>
+        <activity
+            android:name="guoke.activity.AttracTicketOrderDetailActivity"
+            android:label="@string/title_activity_attrac_ticket_order_detail" >
+        </activity>
+        <activity
+            android:name="guoke.activity.CarOrderDetailActivity"
+            android:label="@string/title_activity_car_order_detail" >
+        </activity>
+        <activity
+            android:name=".BeginHotelActivity"
+            android:label="@string/title_activity_hotel_begin" >
+        </activity>
+        <activity
+            android:name=".BeginSceneryActivity"
+            android:label="@string/title_activity_begin_scenery" >
+        </activity>
+        <activity
+            android:name=".BeginCarActivity"
+            android:label="@string/title_activity_begin_car" >
+        </activity>
+        <activity
+            android:name=".BeginCateActivity"
+            android:label="@string/title_activity_begin_cate" >
+        </activity>
+
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+
+        <activity
+            android:name=".LauchActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AlterUsernameActivity"
+            android:label="@string/title_activity_alter_username" >
+        </activity>
+    </application>
+
+</manifest>

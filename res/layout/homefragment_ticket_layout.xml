@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:background="@color/citylist_divider" 
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#484E61" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="景点门票"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+  
+    <TableLayout
+        android:id="@+id/hotelInfo_tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:background="@color/white"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/getCar_city"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="旅游目的地"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/ticketfragment_city_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:hint="选择旅游的城市/地区"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/next_more" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="开始游玩时间"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/ticketfragment_begindate_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:hint="选择日期"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/next_more" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="结束游玩时间"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/ticketfragment_finishdate_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:hint="选择日期"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/next_more" />
+            </LinearLayout>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="按目的地搜索" />
+    </RelativeLayout>
+
+    	        <LinearLayout android:layout_width="fill_parent"
+	            android:layout_height="40dip"
+	            android:layout_marginTop="10dip"
+	            android:gravity="center">
+	        <Button 
+               android:id="@+id/ticketfragment_destsearch_button"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dip"	           
+	            android:layout_marginLeft="15dip"
+	            android:layout_marginRight="15dip"	            
+	            android:background="#484E61"
+	            android:text="搜索"
+	            android:textColor="@color/white"
+	            android:onClick="onLogin"
+	            android:clickable="true"
+	           />
+	         </LinearLayout>
+    
+        <RelativeLayout 
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" 
+            android:background="@color/light_gray2"           
+            >
+            <TextView 
+                android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	
+            	
+            	android:textSize="16sp"
+            	android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+    
+    <RelativeLayout 
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" 
+        android:layout_marginTop="10dp"
+        >
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/keytextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:text="景点关键字"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/keytextview"
+                android:layout_alignParentRight="true"
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                
+                <EditText
+                    android:id="@+id/ticketfragment_keyword_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:layout_weight="1"
+                    android:hint="输入景点名/地名"
+                    android:text=""
+                    android:textSize="18sp" />
+            </LinearLayout>        
+        
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <Button
+            android:id="@+id/ticketfragment_keysearch_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="按景点关键字搜索" />
+    </RelativeLayout>
+
+</LinearLayout>

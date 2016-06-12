@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/address_input"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_centerInParent="true"
+			android:text="请输入您的地点和时间"
+			android:textSize="20sp"
+            />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/address_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <TableLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            >
+            <TableRow >
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:text="目的地:"
+		            />
+		        <EditText
+		            android:id="@+id/destination"
+		            android:layout_height="wrap_content"
+		            android:hint="Input the city"
+		            ></EditText>
+    		</TableRow>
+    		
+    		
+    		
+    		<TableRow >
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:text="到达时间:"
+		            />
+		        <EditText
+		            android:id="@+id/date"
+		            android:layout_height="wrap_content"
+		            android:hint="Input the data"
+		            ></EditText>
+    		</TableRow>
+    		
+    		<TableRow >
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:text="旅游天数:"
+		            />
+		        <EditText
+		            android:id="@+id/days"
+		            android:layout_height="wrap_content"
+		            android:hint="Input the days"
+		            ></EditText>
+    		</TableRow>
+    		<TableRow >
+    		    <RelativeLayout 
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:layout_span="2"
+    		        >
+    		        
+    		        <Button 
+    		            android:id="@+id/button_commit"
+	    		        android:layout_width="wrap_content"
+	    		        android:layout_height="wrap_content"
+	    		        android:layout_centerInParent="true"
+	    		        android:text="确定"
+    		        />
+    		        
+    		    </RelativeLayout>
+    		    
+    		</TableRow>
+            
+        </TableLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

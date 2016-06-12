@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#484E61"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/group_text"
+            android:layout_width="match_parent"
+            android:layout_height="24dip"
+            android:paddingLeft="8dp"
+            android:text="推荐城市"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button 
+            android:id="@+id/city1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="北京"
+            />
+        <Button 
+            android:id="@+id/city2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@null"
+             android:text="长沙"
+            />
+        <Button 
+            android:id="@+id/city3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@null"
+             android:text="桂林"
+            />
+        
+    </LinearLayout>
+	 <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#485E61"
+        android:orientation="vertical" >
+
+        <TextView        
+            android:layout_width="match_parent"
+            android:layout_height="24dip"
+            android:paddingLeft="8dp"
+            android:text="城市大全"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/content_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 这个就是最主要的listview -->
+
+        <ExpandableListView
+            android:id="@+id/elist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:groupIndicator="@null" />
+        <!-- 下面这个是右侧栏的字母列表按钮 -->
+
+        <guoke.custom.SideButton
+            android:id="@+id/sideButton"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+     <RelativeLayout
+         android:id="@+id/add_inputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#484E61" 
+         android:focusable="true"
+            android:focusableInTouchMode="true"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市选择"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+        
+       </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText 
+            android:id="@+id/search_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/city_search_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:hint="请输入城市"
+            />
+        <Button 
+            android:id="@+id/city_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="搜索"
+            />
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:id="@+id/fragment_content"
+        android:layout_width="fill_parent"
+		android:layout_height="0dp"
+        android:layout_weight="1"
+        ></FrameLayout>
+
+</LinearLayout>

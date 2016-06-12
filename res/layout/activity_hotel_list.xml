@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#484E61" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酒店选择"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+        
+       </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#484E61" >
+
+        <TextView 
+            android:id="@+id/hotel_list_arrive_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:textSize="16sp" 
+            android:text="5-09住"
+            />
+        
+        <TextView
+            android:id="@+id/hotel_list_city_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="20sp" 
+            android:text="桂林"/>
+        
+
+        <TextView 
+            android:id="@+id/hotel_list_left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:textSize="16sp" 
+            android:text="5-11离 "
+            />
+    </RelativeLayout>
+	<ImageView       
+	     android:layout_width="match_parent"
+	     android:layout_height="1dp"
+	     android:background="@color/gray"		
+	     />
+	
+
+    <guoke.custom.listview.SingleLayoutListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </guoke.custom.listview.SingleLayoutListView>
+
+</LinearLayout>

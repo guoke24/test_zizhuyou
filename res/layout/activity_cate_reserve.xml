@@ -1,0 +1,273 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#484E61" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="订单确认"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_margin="5dp" >
+
+            <ImageView
+                android:id="@+id/cate_reserve_imageView"
+                android:layout_width="128dp"
+                android:layout_height="96dp"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:id="@+id/cate_reserve_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/cate_reserve_imageView"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/cate_reserve_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:text="能人素食馆"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/cate_reserve_bottom_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="11"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cate_reserve_user_layout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/light_gray2" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="介绍"
+                android:textColor="#898989"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:id="@+id/cate_reserve_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="3"
+                android:text="[中心广场]素食双人自助餐午餐/素食双人自助晚餐2选1"
+                android:textColor="#898989"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cate_reserve_usercontent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/light_gray2" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="预订人信息"
+                android:textColor="#898989"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/cate_reserve_usermessage_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="订购人"
+                    android:textColor="#898989"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/cate_reserve_user_name_input"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/user_phone"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="手机"
+                    android:textColor="#898989"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/cate_reserve_user_phone_input"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="购买份数"
+                    android:textColor="#898989"
+                    android:textSize="16sp" />
+
+                <LinearLayout android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/cate_reserve_num_jian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/cate_reserve_cate_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="2dp" 
+                        android:layout_marginRight="3dp"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/cate_reserve_num_jia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/light_gray2"
+            
+             >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="位置信息"
+                android:textColor="#898989"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/hotelInfo_tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+           
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/cate_reserve_region"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="桂林市七星区"
+                        android:lines="2"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/price_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cate_reserve_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/cate_reserve_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#484E61"
+            android:text="立即预订"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#484E61" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酒店详情"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+        
+       </RelativeLayout>
+    <ScrollView 
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:scrollbars="vertical"
+        >
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+            
+        <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="200dp"
+	        android:background="#484E61" >
+
+	        <ImageView
+	            android:id="@+id/hotel_detail_imageview"
+	            android:layout_width="match_parent"
+	            android:layout_height="200dp"
+	            android:layout_centerInParent="true"
+	            android:src="@drawable/hotel_view"
+	            android:scaleType="centerCrop"
+	            />
+        	
+        	 <TextView
+	            android:id="@+id/hotel_detail_name"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:gravity="bottom"
+	            android:background="#7a8f8d8c"
+	            android:textSize="20sp" 
+	            android:textColor="@color/white"
+	            android:text="酒店名称：如家酒店（七星店）"/>   
+       
+	        
+    	</RelativeLayout>
+
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="32dp" >
+	
+	        <TextView
+	            android:id="@+id/hotel_detail_loaction"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:textSize="16sp" 
+	            android:text="位置：桂林市七星区"/>
+	    </RelativeLayout>
+	    
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="35dp" 
+            android:background="@color/light_gray2"           
+            >
+            <TextView 
+                android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:text="房间型号" 
+            	android:textColor="#898989"
+            	android:textSize="16sp"
+            	android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+	    <FrameLayout
+	        android:id="@+id/room_list_fragment"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        >
+	        
+	    </FrameLayout>
+	    
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

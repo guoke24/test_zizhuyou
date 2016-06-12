@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context="com.example.calendarviewdemo.CalendarActivity"
+    android:orientation="vertical"
+    >
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#484E61" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期选择"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+        
+       </RelativeLayout>
+    
+    <CalendarView 
+        android:id="@+id/calendarView1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        />
+ 
+        <TextView 
+            android:id="@+id/calendar_select_date"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	       
+	        android:textSize="18sp"
+	        android:layout_gravity="center_horizontal"
+            />
+
+
+            <Button
+	        android:id="@+id/commit_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="确定"
+     />
+
+</LinearLayout>

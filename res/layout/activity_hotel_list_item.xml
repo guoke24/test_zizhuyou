@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="108dp"
+    	android:layout_margin="5dp"
+        >
+        
+        <ImageView
+            android:id="@+id/hotel_item_imageView"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:scaleType="centerCrop"          
+            />
+    
+	    <LinearLayout 
+	        android:id="@+id/hotel_item_Layout"
+	        android:layout_height="match_parent"
+	        android:layout_width="wrap_content"	        
+	        android:orientation="vertical"
+	        android:layout_toRightOf="@+id/hotel_item_imageView"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginLeft="5dp"
+	        >
+	        
+	        <TextView
+				android:id="@+id/hotel_item_name"		
+	            android:layout_width="match_parent"
+	            android:layout_height="22dp"
+	            android:text="酒店"
+	            android:textSize="16sp"
+	            android:singleLine="true" 
+
+	            />
+	        
+	           <TextView
+				android:id="@+id/hotel_item_area"		
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="2"
+	            android:text="桂林市七星区"
+	            android:textSize="14sp"
+	            android:lines="3"
+	            android:textColor="#898989"
+	            /> 
+	       
+	           <TextView 
+	            android:id="@+id/hotel_item_price"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="bottom"
+	            android:text="￥120起"
+	            android:textSize="14sp"
+	            android:textColor="@color/red"
+	            />
+      
+	    </LinearLayout>
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

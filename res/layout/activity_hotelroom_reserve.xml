@@ -1,0 +1,388 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#484E61" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="订单确认"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/room_name_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/room_reserve_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="七星景观大床房"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                 <TextView
+                android:id="@+id/room_reserve_hotelname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="如家酒店"
+                android:layout_alignParentLeft="true"
+                android:textColor="#898989"
+                android:layout_toLeftOf="@+id/room_reserve_dayprice"
+                android:textSize="18sp" />
+                
+                <TextView
+                    android:id="@+id/room_reserve_dayprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:text="99"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />                
+                
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/light_gray2" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="房型信息"
+                android:textColor="#898989"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/room_reserve_datail_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TableLayout
+                android:id="@+id/table1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/room_reserve_breakfast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="有wifi"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/room_reserve_bed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="免费宽带"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableLayout>
+
+                    <TextView
+                        android:id="@+id/room_reserve_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </TableLayout>
+            </TableLayout>
+
+            <TableLayout
+                android:visibility="gone"
+                android:id="@+id/table2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/room_reserve_wash_room"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="独立卫浴"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/room_reserve_room_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="18㎡"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/light_gray2" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:text="入住信息"
+                android:textColor="#898989"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/user_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="入住人"
+                    android:textColor="#898989"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/room_reserve_user_name_input"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/user_phone"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="手机"
+                    android:textColor="#898989"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/room_reserve_user_phone_input"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:text="到店时间"
+                    android:textColor="#898989"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/room_reserve_arrive_time_select"
+                    android:layout_height="wrap_content"
+                    android:text="17:00"
+                    android:textColor="@color/black" />
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/light_gray2" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="酒店位置和时间"
+                android:textColor="#898989"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/hotelInfo_tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/room_reserve_getCar_city"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="所在位置"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/room_reserve_checkIn_region_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="桂林市七星区"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="入住时间"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/room_reserve_checkIn_time_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="5-08"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="离开时间"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/room_reserve_checkOut_time_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="5-10"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/price_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/room_reserve_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:text="￥120"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/room_reserve_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#484E61"
+            android:text="立即预订"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/citylist_divider"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#484E61" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="租车出行"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+        
+       </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dip"
+                android:background="@color/white"
+        
+        
+        >
+    <TableLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:stretchColumns="1"
+        >
+        
+        <TableRow >
+            <TextView 
+                android:id="@+id/getCar_city"
+                android:layout_height="wrap_content"
+                android:text="取车城市"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                />
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+             <ImageView 
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@color/gray"
+	            android:layout_marginTop="10dp" 
+	            android:layout_marginBottom="10dp"
+	            />
+            <TextView 
+                android:id="@+id/carFragment_getCar_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="桂林"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                />
+            </LinearLayout>
+            
+        </TableRow>
+        <TableRow 
+            android:visibility="gone"
+            >
+            <TextView 
+                android:id="@+id/getCar_point"
+                android:layout_height="wrap_content"
+                android:text="取车门店"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                
+                />
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView 
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@color/gray"
+	            android:layout_marginTop="5dp" 
+	            android:layout_marginBottom="10dp"
+	            />
+            <TextView 
+                android:id="@+id/carFragment_getcar_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="桂林火车站"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                />
+            </LinearLayout>
+            
+        </TableRow>
+    </TableLayout>
+    
+    <ImageView 
+	     android:layout_width="match_parent"
+	     android:layout_height="0.5dp"
+	     android:background="@color/gray"
+
+	     />
+    
+	<TableLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:stretchColumns="1"
+        >
+        
+        <TableRow >
+            <TextView 
+                android:id="@+id/returnCar_city"
+                android:layout_height="wrap_content"
+                android:text="还车城市"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                />
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView 
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@color/gray"
+	            android:layout_marginTop="10dp" 
+	            android:layout_marginBottom="10dp"
+	            />
+            <TextView 
+                android:id="@+id/carFragment_returnCar_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="桂林"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                />
+            </LinearLayout>
+            
+        </TableRow>
+        <TableRow 
+           android:visibility="gone"
+            >
+            <TextView 
+                android:id="@+id/returnCar_point"
+                android:layout_height="wrap_content"
+                android:text="取车门店"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                
+                />
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView 
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@color/gray"
+	            android:layout_marginTop="10dp" 
+	            android:layout_marginBottom="10dp"
+	            />
+            <TextView 
+                android:id="@+id/carFragment_returnCar_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="桂林汽车站"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                />
+            </LinearLayout>
+            
+        </TableRow>
+    </TableLayout>
+    <ImageView 
+	     android:layout_width="match_parent"
+	     android:layout_height="0.5dp"
+	     android:background="@color/gray"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        >
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取车日期"
+                android:textColor="#898989"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView 
+                android:id="@+id/carFragment_getCar_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "
+                android:textSize="35sp"
+                android:layout_gravity="center_horizontal"
+                />
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用车天数"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView 
+                android:id="@+id/carFragment_usecar_day"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还车日期"
+                android:textColor="#898989"
+				android:layout_gravity="center_horizontal"
+                />
+            <TextView 
+                android:id="@+id/carFragment_returnCar_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "
+                android:textSize="35sp"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout 
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+        
+        <Button 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:text="立即选车"
+            />
+        
+    </RelativeLayout>
+    	        <LinearLayout android:layout_width="fill_parent"
+	            android:layout_height="40dip"
+	            android:layout_marginTop="10dip"
+	            android:gravity="center">
+	        <Button 
+            android:id="@+id/commit_button_to_carlist"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dip"	           
+	            android:layout_marginLeft="15dip"
+	            android:layout_marginRight="15dip"	            
+	            android:background="#484E61"
+	            android:text="搜索"
+	            android:textColor="@color/white"
+	            android:onClick="onLogin"
+	            android:clickable="true"
+	           />
+	         </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_content"
+        android:layout_margin="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:text="欢迎注册！"
+            android:textSize="25sp" />
+	</RelativeLayout>
+        <TableLayout
+            android:id="@+id/login_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="手机："
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/register_phone"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入手机" >
+                </EditText>
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="验证码："
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/register_vailate_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="请输入验证码" >
+                </EditText>
+
+                <guoke.custom.timebutton.TimeButton
+                    android:id="@+id/regiser_send_vailate_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="密码"
+                    android:textSize="20sp" />
+
+                <RelativeLayout android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/register_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/show_password"
+                        android:inputType="textPassword" />
+
+                    <CheckBox
+                        android:id="@+id/show_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="再次密码"
+                    android:textSize="20sp" />
+
+                <RelativeLayout android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/register_password_again"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/register_show_password_again"
+                        android:inputType="textPassword" />
+
+                    <CheckBox
+                        android:id="@+id/register_show_password_again"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/register_commit"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="提交" />
+            </TableRow>
+        </TableLayout>
+
+
+</LinearLayout>

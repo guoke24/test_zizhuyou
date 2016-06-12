@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:id="@+id/attraction_item_imageView"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/car_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/attraction_item_imageView"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/attraction_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2"
+                
+                android:text="七星公园"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/attraction_item_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="这里有国内保存最完好的明代城墙，有保护最完整的明代藩王府。\n“阅尽王城知桂林”。"
+                android:textColor="#898989"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/attraction_item_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="开放时间：08:00-17:00"
+                android:textColor="#898989"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray" />
+
+</LinearLayout>
